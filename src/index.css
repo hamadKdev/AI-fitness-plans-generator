@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes indeterminate {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+  }
+
+  .animate-indeterminate {
+    animation: indeterminate 1.8s infinite cubic-bezier(0.65, 0.815, 0.735, 0.395);
+  }
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  header, footer, button, .print\:hidden {
+    display: none !important;
+  }
+
+  #plan-printable-area {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

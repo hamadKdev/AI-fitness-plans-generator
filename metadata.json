@@ -1,0 +1,6 @@
+{
+  "name": "AI Fitness Plan Generator",
+  "description": "Modern responsive web application for generating personalized AI fitness and nutrition plans integrated with FastAPI backend endpoints.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
